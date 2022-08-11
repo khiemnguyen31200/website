@@ -104,54 +104,36 @@
           </ul>
         </nav>
         <div class="col-lg-9" style="padding: 50px">
+          <div style="padding-bottom: 20px">
+            <a th:href="|/job-list-for-employer|"  id="back-button" class="btn btn-primary border-width-2 d-none d-lg-inline-block text-white" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg>
+              Back to all job</a>
+          </div>
           <table class="table">
             <thead class="table-primary">
             <tr>
               <th>STT</th>
-              <th>Title</th>
-              <th>Salary</th>
-              <th>Update time</th>
-              <th>Dead line</th>
+              <th>Tên công việc</th>
+              <th>Tên người ứng tuyển</th>
+              <th>Số điện thoai</th>
+              <th>Email</th>
+              <th>Thời gian ứng tuyển</th>
               <th>State</th>
-              <th>Controller</th>
+              <th>Cv ứng tuyển</th>
             </tr>
             </thead>
             <tbody>
-            <tr th:each="job,iStat:${jobs}">
+            <tr th:each="applicant,iStat:${applicants}">
               <th th:text="${iStat.index} + 1"></th>
-              <td th:text="${job.title}"></td>
-              <td th:text="${job.salary}"></td>
-              <td th:text="${job.timeCreate}"></td>
-              <td th:text="${job.deadline}"></td>
-              <td th:text="${job.state}"></td>
-              <td width="260px">
-                <a th:href="|/apply-list-in-job?job_id=${job.id}|" class="btn btn-info">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-                  </svg>
-                </a>
-                <a th:href="|/change-stasus-active?emp_id=${emp_id}&job_id=${job.id}|" class="btn btn-primary">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-                  </svg>
-                </a>
-                <a th:href="|/change-stasus-disable?emp_id=${emp_id}&job_id=${job.id}|" class="btn btn-danger">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-                  </svg>
-                </a>
-                <a th:href="|/edit-job?emp_id=${emp_id}&job_id=${job.id}|" class="btn btn-warning">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                  </svg>
-                </a>
-                <a th:href="|/job-detail?job_id=${job.id}|" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
-                  <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
-                </svg>
-                </a>
-
-              </td>
+              <td th:text="${applicant.getJob().getTitle()}"></td>
+              <td th:text="${applicant.getApplicant().getUser().getName()}"></td>
+              <td th:text="${applicant.getApplicant().getPhone()}"></td>
+              <td th:text="${applicant.getApplicant().getUser().getEmail()}"></td>
+              <td th:text="${applicant.timeUpdate}"></td>
+              <td th:text="${applicant.getApplyState()}"></td>
+              <td><a th:href="|/pdf${applicant.getCv_path()}|" target="_blank">Xem CV</a></td>
             </tr>
             </tbody>
           </table>

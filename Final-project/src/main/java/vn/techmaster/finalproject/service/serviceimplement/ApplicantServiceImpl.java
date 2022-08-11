@@ -82,6 +82,11 @@ public class ApplicantServiceImpl implements ApplicantService {
     }
 
     @Override
+    public Collection<ApplicantJob> findAllApplicantInJob(String emp_id, String job_id) {
+        return applicantJobRepo.findAll().stream().filter(apply -> apply.getJob().getEmployer().getId().equals(emp_id)).filter(apply ->apply.getJob().getId().equals(job_id)).filter(apply -> !apply.getApplyState().equals(ApplyState.NONE)).collect(Collectors.toList());
+    }
+
+    @Override
     public Collection<ApplicantJob> findAllApplyAcceptByEmpId(String emp_id) {
         return applicantJobRepo.findAll().stream().filter(apply -> apply.getJob().getEmployer().getId().equals(emp_id)).filter(apply -> apply.getApplyState().equals(ApplyState.ACCEPT)).collect(Collectors.toList());
     }

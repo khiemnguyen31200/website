@@ -14,6 +14,7 @@ public interface ApplicantService {
     public abstract String findApplicantJob(String userID, String jobID);
 
     public abstract Collection<ApplicantJob> findAllApplyByEmpId (String emp_id);
+    public abstract Collection<ApplicantJob> findAllApplicantInJob (String emp_id,String job_id);
     public abstract Collection<ApplicantJob> findAllApplyAcceptByEmpId (String emp_id);
     public abstract Collection<ApplicantJob> findAllApplyRejectByEmpId (String emp_id);
     public abstract Collection<ApplicantJob> findAllApplyByUserId (String user_id);

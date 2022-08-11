@@ -56,7 +56,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                             ,"/saving-password","/save-list-for-applicant"
                             ,"/apply-list-for-applicant","/change-info-applicant"
                             ,"/saving-change-applicant","/applicant-info",
-                            "/accept-applicant","/reject-applicant").permitAll()
+                            "/accept-applicant","/reject-applicant",
+                            "apply-list-in-job").permitAll()
                     .antMatchers("/profile").hasRole("APPLICANT")
                     .antMatchers("/add-job").hasAnyRole("EMPLOEYER")
                     .antMatchers("/admin/users").hasRole("ADMIN")

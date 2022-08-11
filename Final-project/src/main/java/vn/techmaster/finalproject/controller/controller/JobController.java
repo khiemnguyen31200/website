@@ -25,7 +25,7 @@ public class JobController {
      private CityService cityService;
      private ApplicantService applicantService;
 
-    @GetMapping("job-list-for-employer")
+    @GetMapping("/job-list-for-employer")
     public String listJobEmployer(Model model){
         UserDetailCustom user = (UserDetailCustom) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         var jobs = jobService.findByEmpId(user.getUser().getId());
@@ -104,6 +104,14 @@ public class JobController {
         var applicants= applicantService.findAllApplyRejectByEmpId(user.getUser().getId());
         model.addAttribute("applicants",applicants);
         return "job/danh-sach-ung-vien-da-tu-choi";
+    }
+
+    @GetMapping("/apply-list-in-job")
+    public String applyListInJob(Model model,@RequestParam String job_id){
+        UserDetailCustom user = (UserDetailCustom) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        var applicants= applicantService.findAllApplicantInJob(user.getUser().getId(),job_id);
+        model.addAttribute("applicants",applicants);
+        return "job/danh-sach-ung-vien-trong-viec";
     }
 
 }
