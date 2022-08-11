@@ -1,260 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Final-project:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1bfeafb-144c-41ea-9398-e31ca1f90e51" name="Changes" comment="" />
+    <list default="true" id="1b70dd2f-28aa-4021-baee-dec26624bf01" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Record" />
-        <option value="HTML File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="29eEUcFrhwv8AEh5nBQZSkXUAYA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Spring Code/ChekingProject/Final-project/src/main/resources/templates/job",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "4ce77b4569522f2454a674eb053ddd7e"
+    "RequestMappingsPanelWidth1": "75"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\templates\job" />
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\templates\applicant" />
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\templates\company" />
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\templates\applicant-apply-job" />
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\static\images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\templates" />
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\templates\email" />
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\templates\applicant" />
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\templates\account" />
-      <recent name="D:\Spring Code\ChekingProject\Final-project\src\main\resources\templates\account\register" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="vn.techmaster.finalproject.Interceptor" />
-      <recent name="vn.techmaster.finalproject.config" />
-      <recent name="vn.techmaster.finalproject.security" />
-      <recent name="vn.techmaster.finalproject.model" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Spring Boot.FinalProjectApplication">
-    <configuration name="ApplicantServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Final-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vn.techmaster.finalproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vn.techmaster.finalproject" />
-      <option name="MAIN_CLASS_NAME" value="vn.techmaster.finalproject.ApplicantServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApplicantServiceTest.deleteApplicantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Final-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vn.techmaster.finalproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vn.techmaster.finalproject" />
-      <option name="MAIN_CLASS_NAME" value="vn.techmaster.finalproject.ApplicantServiceTest" />
-      <option name="METHOD_NAME" value="deleteApplicantTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FinalProjectApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Final-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vn.techmaster.finalproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vn.techmaster.finalproject" />
-      <option name="MAIN_CLASS_NAME" value="vn.techmaster.finalproject.FinalProjectApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FinalProjectApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Final-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vn.techmaster.finalproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vn.techmaster.finalproject" />
-      <option name="MAIN_CLASS_NAME" value="vn.techmaster.finalproject.FinalProjectApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FinalProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Final-project" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.techmaster.finalproject.FinalProjectApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.ApplicantServiceTest" />
-        <item itemvalue="JUnit.ApplicantServiceTest.deleteApplicantTest" />
-        <item itemvalue="JUnit.FinalProjectApplicationTests" />
-        <item itemvalue="JUnit.FinalProjectApplicationTests.contextLoads" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="d1bfeafb-144c-41ea-9398-e31ca1f90e51" name="Changes" comment="" />
-      <created>1653465170243</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1653465170243</updated>
-      <workItem from="1653465171698" duration="2360000" />
-      <workItem from="1653479298023" duration="6018000" />
-      <workItem from="1653762154622" duration="2960000" />
-      <workItem from="1653809903808" duration="26556000" />
-      <workItem from="1654054673803" duration="38000" />
-      <workItem from="1654067079161" duration="10825000" />
-      <workItem from="1654080395529" duration="2362000" />
-      <workItem from="1654151827874" duration="9405000" />
-      <workItem from="1654256198717" duration="561000" />
-      <workItem from="1654263341494" duration="1794000" />
-      <workItem from="1654318138561" duration="46000" />
-      <workItem from="1654319057515" duration="1308000" />
-      <workItem from="1654436373158" duration="13696000" />
-      <workItem from="1654626749545" duration="6960000" />
-      <workItem from="1655466242212" duration="6566000" />
-      <workItem from="1655654461032" duration="640000" />
-      <workItem from="1655972263589" duration="1204000" />
-      <workItem from="1655973828378" duration="2759000" />
-      <workItem from="1656079006012" duration="4508000" />
-      <workItem from="1656145554946" duration="346000" />
-      <workItem from="1656145912232" duration="1864000" />
-      <workItem from="1656151154877" duration="7881000" />
-      <workItem from="1656396639816" duration="1381000" />
-      <workItem from="1656616414846" duration="12019000" />
-      <workItem from="1656678578050" duration="8498000" />
-      <workItem from="1657106525278" duration="1378000" />
-      <workItem from="1657540130685" duration="2166000" />
-      <workItem from="1657649708023" duration="903000" />
-      <workItem from="1658225013114" duration="758000" />
-      <workItem from="1658289260554" duration="31568000" />
-      <workItem from="1658412249875" duration="4109000" />
-      <workItem from="1658462765657" duration="27174000" />
-      <workItem from="1658555008393" duration="26936000" />
-      <workItem from="1658721469485" duration="36470000" />
-      <workItem from="1658841456906" duration="19483000" />
-      <workItem from="1658941503043" duration="15952000" />
-      <workItem from="1659205508649" duration="13043000" />
-      <workItem from="1659495420178" duration="6806000" />
-      <workItem from="1659502536445" duration="4847000" />
-      <workItem from="1659546428628" duration="15745000" />
-      <workItem from="1659625616115" duration="16342000" />
-      <workItem from="1659691396383" duration="12131000" />
-      <workItem from="1659763261182" duration="10023000" />
-      <workItem from="1659807498472" duration="23962000" />
-      <workItem from="1659857943724" duration="9179000" />
-      <workItem from="1659874381055" duration="52318000" />
-      <workItem from="1660020712994" duration="11141000" />
-      <workItem from="1660034894261" duration="11059000" />
-      <workItem from="1660057938879" duration="25886000" />
-      <workItem from="1660141500048" duration="16549000" />
-      <workItem from="1660171082045" duration="2375000" />
-      <workItem from="1660177037422" duration="21000" />
-      <workItem from="1660177128795" duration="26000" />
-      <workItem from="1660177711960" duration="298000" />
-      <workItem from="1660178203158" duration="3824000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
-    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
