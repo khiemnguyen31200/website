@@ -28,7 +28,7 @@
 
 ## 4. Link AWS 
 
-[Dự án Job Hunt](18.140.234.19:89)
+[Dự án Job Hunt](http://18.140.234.19:89)
 
 ### Tài khoản Job seeker
 
