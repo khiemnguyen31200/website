@@ -25,3 +25,17 @@
 ### Employer
 
 ![Employer](https://github.com/khiemnguyen31200/Onlab/blob/main/photos/Employers%20Functions.png)
+
+## 4. Link AWS 
+
+[Dự án Job Hunt](18.140.234.19:89)
+
+### Tài khoản Job seeker
+
+#### Tên đăng nhập : khiem31200@gmail.com
+#### Mật khẩu : 123456789
+
+### Tài khoản Employer 
+
+#### Tên đăng nhập : khiem1524263@gmail.com
+#### Mật khẩu : 123456789
