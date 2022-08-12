@@ -39,3 +39,5 @@
 
 #### Tên đăng nhập : khiem1524263@gmail.com
 #### Mật khẩu : 123456789
+
+### Lưu ý : Ảnh nên upload tối đa kích thước 256px * 256px để đảm bảo không vỡ giao diện !
