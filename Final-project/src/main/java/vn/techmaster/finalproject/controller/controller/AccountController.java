@@ -1,5 +1,6 @@
 package vn.techmaster.finalproject.controller.controller;
 
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -27,19 +28,14 @@ import javax.validation.Valid;
 import java.util.Optional;
 
 @Controller
+@AllArgsConstructor
 public class AccountController {
-    @Autowired
     private AccountService accountService;
+    private EmailValidServiceImpl emailValidServiceImpl;
+    private CityService cityService;
+    private FileService fileService;
+    private AuthorizeRepository authorizeRepository;
 
-    @Autowired private EmailValidServiceImpl emailValidServiceImpl;
-
-    @Autowired private CityService cityService;
-
-    @Autowired private FileService fileService;
-
-    @Autowired private AuthorizeRepository authorizeRepository;
-
-    @Autowired private UserRepository userRepository;
     //Chức năng đăng kí tài khoản
     @GetMapping("/register-employee")
     public String register(Model model ){

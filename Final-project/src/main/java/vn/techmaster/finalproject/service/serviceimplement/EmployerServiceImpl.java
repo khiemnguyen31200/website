@@ -1,6 +1,7 @@
 package vn.techmaster.finalproject.service.serviceimplement;
 
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import vn.techmaster.finalproject.model.entity.ApplicantJob;
 import vn.techmaster.finalproject.model.entity.ApplyState;
@@ -13,7 +14,7 @@ import vn.techmaster.finalproject.service.serviceinterface.MailService;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Service
+@Component
 @AllArgsConstructor
 public class EmployerServiceImpl implements EmployerService {
     private EmployerRepo employerRepo;

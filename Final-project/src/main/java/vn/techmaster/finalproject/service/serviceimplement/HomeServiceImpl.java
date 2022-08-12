@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import vn.techmaster.finalproject.model.entity.ApplyState;
 import vn.techmaster.finalproject.model.entity.Job;
@@ -18,7 +19,7 @@ import vn.techmaster.finalproject.service.serviceinterface.HomeService;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-@Service
+@Component
 @AllArgsConstructor
 public class HomeServiceImpl implements HomeService {
 

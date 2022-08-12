@@ -1,5 +1,6 @@
 package vn.techmaster.finalproject.controller.controller;
 
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -18,11 +19,11 @@ import vn.techmaster.finalproject.service.serviceinterface.CityService;
 
 import java.util.Optional;
 @Controller
+@AllArgsConstructor
 public class EmployerController {
+    private EmployerRepo employerRepo;
 
-    @Autowired private EmployerRepo employerRepo;
-
-    @Autowired private CityService cityService;
+    private CityService cityService;
 
     @GetMapping("/employer-infor")
     public String employer(Model model){

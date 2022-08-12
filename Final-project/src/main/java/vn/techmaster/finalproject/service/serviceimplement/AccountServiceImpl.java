@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import vn.techmaster.finalproject.exception.NotFoundException;
 import vn.techmaster.finalproject.model.entity.*;
@@ -20,7 +21,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@Service
+@Component
 @AllArgsConstructor
 public class AccountServiceImpl implements AccountService {
 
@@ -38,7 +39,7 @@ public class AccountServiceImpl implements AccountService {
         var applicant = Applicant.builder().user(user).phone(phoneNumber).ranking(Ranking.FREE).skills(skills).build();
         applicantRepository.save(applicant);
         String token_code= renderToken(user_id);
-        String url = "http://localhost:89/validate?token="+token_code;
+        String url = "http://18.140.234.19:89/validate?token="+token_code;
         mailService.sendEmail(email,"Xác nhận tài khoản của bạn tại Job hunt","Vui lòng nhấp vào link này để xác thực tài khoản của bạn : "+url);
     }
     @Override
@@ -48,7 +49,7 @@ public class AccountServiceImpl implements AccountService {
         var company = Employer.builder().companyName(companyName).hotline(phoneNumber).website(website).user(user).build();
         employerRepo.save(company);
         String token_code= renderToken(user_id);
-        String url = "http://localhost:89/validate?token="+token_code;
+        String url = "http://18.140.234.19:89/validate?token="+token_code;
         mailService.sendEmail(email,"Xác nhận tài khoản của bạn tại Job hunt","Vui lòng nhấp vào link này để xác thực tài khoản của bạn : "+url);
     }
 

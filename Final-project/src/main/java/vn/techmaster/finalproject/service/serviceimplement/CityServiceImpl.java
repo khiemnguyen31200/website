@@ -2,6 +2,7 @@ package vn.techmaster.finalproject.service.serviceimplement;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
 import org.springframework.stereotype.Service;
@@ -15,7 +16,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
+@Component
 public class CityServiceImpl implements CityService {
 
     @Override

@@ -16,15 +16,15 @@ import java.util.UUID;
 
 @SpringBootApplication
 @AllArgsConstructor
-public class FinalProjectApplication implements CommandLineRunner {
-    private EntityManager entityManager;
+public class FinalProjectApplication  {
+//    private EntityManager entityManager;
     public static void main(String[] args) {
         SpringApplication.run(FinalProjectApplication.class, args);
     }
 
-    @Override
-    @Transactional
-    public void run(String... args) throws Exception {
+//    @Override
+//    @Transactional
+//    public void run(String... args) throws Exception {
 //        var user = User.builder().id(UUID.randomUUID().toString()).name("main").email("admin@gmail.com").password("47775855555").build();
 //        var file = File.builder().id(UUID.randomUUID().toString()).path("Javax.txt").user(user).build();
 //
@@ -41,5 +41,5 @@ public class FinalProjectApplication implements CommandLineRunner {
 //        entityManager.persist(jobApplicant);
 //
 //        entityManager.flush();
-    }
+//    }
 }

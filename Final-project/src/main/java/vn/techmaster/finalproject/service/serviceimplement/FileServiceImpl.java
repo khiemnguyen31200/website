@@ -3,6 +3,7 @@ package vn.techmaster.finalproject.service.serviceimplement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.multipart.MultipartFile;
@@ -24,7 +25,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@Service
+@Component
 public class FileServiceImpl implements FileService {
 
     @Autowired private UserRepository userRepository;
@@ -32,7 +33,7 @@ public class FileServiceImpl implements FileService {
     @Autowired private FileRepository fileRepository;
 
 
-    private final Path rootDir = Paths.get("uploads");
+    private final Path rootDir = Paths.get("src/main/resources/static/images/uploads");
 
     public FileServiceImpl() {
         createFolder(rootDir.toString());
@@ -57,7 +58,7 @@ public class FileServiceImpl implements FileService {
             throw new BadRequestException("Tên file không hợp lệ");
         }
         String fileExtension = getFileExtension(fileName);
-        Path UserDir = Paths.get("uploads").resolve(String.valueOf(user_id));
+        Path UserDir = Paths.get("src/main/resources/static/images/uploads").resolve(String.valueOf(user_id));
         String fileID = UUID.randomUUID().toString();
         if (fileType.equals(FileType.PHOTO)) {
             if (!checkFileExtensionPhoto(fileExtension)) {

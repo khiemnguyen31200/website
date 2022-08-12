@@ -1,6 +1,7 @@
 package vn.techmaster.finalproject.service.serviceimplement;
 
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import vn.techmaster.finalproject.model.entity.*;
 import vn.techmaster.finalproject.repository.ApplicantJobRepo;
@@ -15,7 +16,7 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-@Service
+@Component
 @AllArgsConstructor
 public class ApplicantServiceImpl implements ApplicantService {
 

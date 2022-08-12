@@ -112,7 +112,7 @@
                         <tbody>
                         <tr th:each="applicant,iStat:${applicants}">
                             <th th:text="${iStat.index} + 1"></th>
-                            <td th:text="${applicant.getJob().getTitle()}"></td>
+                            <td><a th:href="|/job-detail?job_id=${applicant.getJob().getId()}|"><p th:text="${applicant.getJob().getTitle()}"></p></a></td>
                             <td th:text="${applicant.timeUpdate}"></td>
                         </tr>
                         </tbody>

@@ -21,7 +21,6 @@ import java.util.Optional;
 @Controller
 @AllArgsConstructor
 public class ApplicantController {
-
     private ApplicantService applicantService;
 
     private ApplicantRepo applicantRepo;

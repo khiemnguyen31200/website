@@ -7,12 +7,13 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import vn.techmaster.finalproject.service.serviceinterface.MailService;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
-@Service
+@Component
 @AllArgsConstructor
 public class MailServiceImpl implements MailService {
 

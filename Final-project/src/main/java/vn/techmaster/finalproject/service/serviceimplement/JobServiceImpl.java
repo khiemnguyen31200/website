@@ -1,6 +1,7 @@
 package vn.techmaster.finalproject.service.serviceimplement;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import vn.techmaster.finalproject.exception.NotFoundException;
 import vn.techmaster.finalproject.model.entity.Employer;
@@ -17,7 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@Service
+@Component
 public class JobServiceImpl implements JobService {
     @Autowired private JobRepository jobRepository;
     @Autowired private EmployerRepo employerRepo;

@@ -20,7 +20,6 @@ import vn.techmaster.finalproject.service.serviceinterface.FileService;
 @AllArgsConstructor
 public class ApplyController {
     private ApplicantService applicantService;
-
     private FileService fileService;
 
     private EmployerService employerService;
