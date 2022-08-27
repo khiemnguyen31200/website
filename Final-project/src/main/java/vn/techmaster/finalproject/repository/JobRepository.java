@@ -10,7 +10,6 @@ import vn.techmaster.finalproject.model.entity.Job;
 
 @Repository
 public interface JobRepository extends JpaRepository<Job,String>  {
-
     @Query(nativeQuery = true, value = "SELECT * \n" +
             "FROM job \n " +
             "WHERE state = 'ACTIVE'\n" +

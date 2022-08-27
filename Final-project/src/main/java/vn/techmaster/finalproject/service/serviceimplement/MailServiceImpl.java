@@ -19,6 +19,7 @@ public class MailServiceImpl implements MailService {
 
     private JavaMailSender sender;
 
+    @Async
     public void sendEmail(String email, String subject, String text){
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(email);
@@ -26,6 +27,5 @@ public class MailServiceImpl implements MailService {
         message.setText(text);
         // Send Message!
         sender.send(message);
-
     }
 }
